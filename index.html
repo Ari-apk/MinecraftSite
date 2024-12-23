@@ -53,10 +53,9 @@
     <script>
         function launchGame() {
             const isTouchMode = document.getElementById('touchModeCheckbox').checked;
-            const repoName = 'MinecraftSite'; // Replace this with your repository name
             const url = isTouchMode 
-                ? `/${repoName}/touchmode/index.html` 
-                : `/${repoName}/normal/index.html`;
+                ? '/touchmode/index.html' 
+                : '/normal/index.html';
             window.location.href = url;
         }
     </script>
